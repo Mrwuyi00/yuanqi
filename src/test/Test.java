@@ -7,6 +7,8 @@ package test;
  **/
 public class Test {
 
+	private String name = "linwu";
+
 	public static void main(String[] args) {
 		String str = "helloworld";
 		String str1 = "aaa" ;
