@@ -1,4 +1,6 @@
-package com.linwu.yuanqi.util;
+package com.linwu.yuanqi.util.factory;
+
+import com.linwu.yuanqi.util.Sender;
 
 /**
  * Created by linwu on 11/6/2017.
