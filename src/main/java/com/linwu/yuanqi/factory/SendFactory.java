@@ -1,4 +1,4 @@
-package com.linwu.yuanqi.util.factory;
+package com.linwu.yuanqi.factory;
 
 import com.linwu.yuanqi.util.Sender;
 
