@@ -1,5 +1,7 @@
 package com.linwu.yuanqi.factory;
 
+import com.linwu.yuanqi.util.Sender;
+
 /**
  * Created by linwu on 11/7/2017.
  */
@@ -11,20 +13,6 @@ public class FactoryTest {
         Sender sender = factory.produce("sms");
 
         sender.send();
-
-        Sender sender1 = factory.produceMail();
-
-        sender1.send();
-
-        Sender sender2 = SendFactory.produceStaticMail();
-
-        sender2.send();
-
-        Provider provider = new SenderMailFactory();
-
-        Sender sender3 = provider.produce();
-
-        sender3.send();
     }
 
 }
