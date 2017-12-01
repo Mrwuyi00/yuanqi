@@ -1,6 +1,4 @@
-package com.linwu.yuanqi.util.factory;
-
-import com.linwu.yuanqi.util.Sender;
+package com.linwu.yuanqi.factory;
 
 /**
  * Created by linwu on 11/7/2017.
@@ -17,5 +15,23 @@ public class SendFactory {
             return null;
         }
     }
+
+    public Sender produceMail(){
+        return new MailSender();
+    }
+
+    public Sender produceSms(){
+        return new SmsSender();
+    }
+
+    public static Sender produceStaticMail(){
+        return new MailSender();
+    }
+
+    public static Sender produceStaticSms(){
+        return new SmsSender();
+    }
+
+
 
 }
