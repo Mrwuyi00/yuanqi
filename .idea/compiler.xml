@@ -9,8 +9,8 @@
         <module name="yuanqi" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="yuanqi" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="yuanqi" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
