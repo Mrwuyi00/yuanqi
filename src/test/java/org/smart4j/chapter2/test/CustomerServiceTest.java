@@ -36,6 +36,13 @@ public class CustomerServiceTest {
     }
 
     @Test
+    public void getCustomerOrderInfo() throws Exception{
+        String id = "1";
+        List<Map<String, Object>> result = customerService.getCustomerOrderInfo(id);
+        Assert.assertEquals(2, result.size());
+    }
+
+    @Test
     public void getCustomerByIdTest() throws Exception{
         long id = 1;
         Customer customer = customerService.getCustomerById(id);
