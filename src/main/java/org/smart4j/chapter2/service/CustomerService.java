@@ -26,12 +26,8 @@ public class CustomerService {
      * @return
      */
     public List<Customer> getCustomerList(String keyword){
-        try{
             String sql = "SELECT * FROM customer";
             return DatabaseHelper.queryEntityList(Customer.class, sql);
-        }finally {
-            DatabaseHelper.closeConnection();
-        }
     }
 
     /**
@@ -39,15 +35,11 @@ public class CustomerService {
      * @return
      */
     public List<Map<String, Object>> getCustomerOrderInfo(String keyWord){
-        try{
-            String sql = "select c.name, c.telephone, p.name, p.price from customer_order o " +
-                    "inner join customer c on o.customer_id = c.id " +
-                    "inner join product p on o.product_id = p.id " +
-                    "where o.customer_id = ?";
-            return DatabaseHelper.executeQuery(sql, keyWord);
-        }finally {
-            DatabaseHelper.closeConnection();
-        }
+        String sql = "select c.name, c.telephone, p.name, p.price from customer_order o " +
+                "inner join customer c on o.customer_id = c.id " +
+                "inner join product p on o.product_id = p.id " +
+                "where o.customer_id = ?";
+        return DatabaseHelper.executeQuery(sql, keyWord);
     }
 
     /**
@@ -56,12 +48,8 @@ public class CustomerService {
      * @return
      */
     public Customer getCustomerById(long id){
-        try{
-            String sql = "SELECT * FROM customer Where id = ?";
-            return DatabaseHelper.queryEntity(Customer.class, sql, id);
-        }finally {
-            DatabaseHelper.closeConnection();
-        }
+        String sql = "SELECT * FROM customer Where id = ?";
+        return DatabaseHelper.queryEntity(Customer.class, sql, id);
     }
 
     /**

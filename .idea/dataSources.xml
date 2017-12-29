@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="yuanqi@localhost" uuid="3719b9c4-a96f-43aa-b060-4b8fef3d6a4e">
+    <data-source source="LOCAL" name="demo_test@localhost" uuid="25823f88-337d-4032-874e-14807cb1eb3e">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/yuanqi</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/demo_test</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
@@ -15,11 +15,11 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="demo_test@localhost" uuid="25823f88-337d-4032-874e-14807cb1eb3e">
+    <data-source source="LOCAL" name="demo@localhost" uuid="1b4ca7fe-d9d6-42cb-aec0-413c936713ca">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/demo_test</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/demo</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
